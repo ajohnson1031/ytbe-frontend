@@ -1,0 +1,141 @@
+* {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+  margin-top: 30vh;
+  color: #333;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.URL-input,
+.unselectable {
+  font-size: 1.1em;
+  padding: 5px 25px;
+  border-radius: 4px 0px 0px 4px;
+  width: 30em;
+  text-align: left;
+  border: 2px solid #eeeeee;
+  background: #eeeeee;
+  outline: none;
+  color: #333;
+
+  &::placeholder {
+    color: #cccccc;
+  }
+}
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+  color: #cccccc;
+}
+button {
+  border-radius: 0px 4px 4px 0px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.375em;
+  padding: 5px 10px;
+}
+.search {
+  border: 2px solid #7500dc;
+  background: #7500dc;
+
+  &:hover {
+    border: 2px solid #5b00ab;
+    background: #5b00ab;
+  }
+}
+.clear {
+  border: 2px solid #dc0051;
+  background: #dc0051;
+
+  &:hover {
+    border: 2px solid #8e0026;
+    background: #8e0026;
+  }
+}
+.error-message {
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  color: #5e0000;
+  background: #ffc9c9;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 25px auto;
+}
+/** Video Details Styling **/
+a,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 175%;
+  width: fit-content;
+  text-align: left;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: dodgerblue;
+
+  &:hover {
+    color: #0151a0;
+  }
+}
+h4 {
+  line-height: 130%;
+  padding-bottom: 4px;
+}
+.vid-details-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 20px auto;
+  width: fit-content;
+}
+.vid-thumbnail {
+  height: 175px;
+  border-radius: 4px;
+}
+.vid-details-inner-container {
+  text-align: left;
+  margin-left: 20px;
+}
+#vid-actions-container {
+  display: flex;
+
+  .vid-links-select {
+    width: 200px;
+    height: 44px;
+    margin: 10px 15px 0 0;
+    text-align: left;
+    outline: 2px;
+  }
+  #vid-download-button {
+    font-size: 1rem;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007078;
+    padding: 0 15px;
+
+    &:hover {
+      background: #014d52;
+    }
+
+    svg {
+      font-size: 1.4rem;
+    }
+  }
+}
