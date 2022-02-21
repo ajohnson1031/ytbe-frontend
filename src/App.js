@@ -90,10 +90,6 @@ function App() {
       ]);
   }, [vidData, options]);
 
-  // useEffect(() => {
-  //   console.log(selectedVid);
-  // }, [selectedVid]);
-
   return (
     <div className="App">
       <h1 className="heading">YouTube Video Downloader</h1>
@@ -160,7 +156,6 @@ function App() {
                 <button
                   id="vid-download-button"
                   onClick={() => {
-                    console.log(selectedVid);
                     downloadVideo(selectedVid);
                   }}
                 >
