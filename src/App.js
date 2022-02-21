@@ -30,7 +30,7 @@ function App() {
     }
 
     axios
-      .get(`https://ytbe-backend.herokuapp.com/search?URL=${url}`)
+      .get(`[YOUR BACKEND HOST - I USED HEROKU]/search?URL=${url}`)
       .then((res) => {
         setVidData(res.data);
         setMode("clear");
@@ -48,7 +48,7 @@ function App() {
   };
 
   const downloadVideo = (vid) => {
-    window.location.href = `https://ytbe-backend.herokuapp.com/download?title=${vid.value.title}&url=${vid.value.url}&mp3=${vid.mp3}`;
+    window.location.href = `https://[YOUR BACKEND HOST - I USED HEROKU]/download?title=${vid.value.title}&url=${vid.value.url}&mp3=${vid.mp3}`;
   };
 
   useEffect(() => {
